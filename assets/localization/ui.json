@@ -1,0 +1,75 @@
+{
+  "it": {
+    "title": "Trova la spia",
+    "players": "Numero di giocatori",
+    "spies": "Numero di spie",
+    "play_now": "Gioca ora!",
+    "adv_settings": "Impostazioni avanzate",
+    "options": [
+      "Geografia",
+      "Nazioni",
+      "Luoghi",
+      "Animali",
+      "Lavori",
+      "Oggetti"
+    ],
+    "topic": "Argomenti"
+  },
+  "en": {
+    "title": "Find the spy",
+    "players": "Number of players",
+    "spies": "Number of spies",
+    "play_now": "Play now!",
+    "adv_settings": "Advanced settings",
+    "options": [
+      "Geography",
+      "Nations",
+      "Locations",
+      "Animals",
+      "Jobs",
+      "Objects"
+    ],
+    "topic": "Topics"
+  },
+  "fr": {
+    "title": "Découvrir l'espion",
+    "players": "Nombre de joueurs",
+    "spies": "Nombre d'espions",
+    "play_now": "Jouer maintenant!",
+    "adv_settings": "Paramètres avancés",
+    "options": [
+      "Géographie",
+      "Nations",
+      "Lieux",
+      "Animaux",
+      "Emplois",
+      "Objets"
+    ],
+    "topic": "Sujets"
+  },
+  "es": {
+    "title": "Descubra al espía",
+    "players": "Número de jugadores",
+    "spies": "Número de espías",
+    "play_now": "Jugar ahora!",
+    "adv_settings": "Configuración avanzada",
+    "options": [
+      "Geografía",
+      "Naciones",
+      "Lugares",
+      "Animales",
+      "Trabajos",
+      "Objetos"
+    ],
+    "topic": "Temas"
+  },
+  "de": {
+    "title": "Finde den Spion",
+    "players": "Anzahl der Spieler",
+    "spies": "Anzahl der Spione",
+    "play_now": "Jetzt spielen!",
+    "adv_settings": "Erweiterte Einstellungen",
+    "options": ["Geographie", "Nationen", "Orte", "Tiere", "Berufe", "Objekte"],
+    "topic": "Themen"
+  }
+}

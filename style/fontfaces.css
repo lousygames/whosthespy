@@ -1,11 +1,11 @@
 @font-face {
   font-family: "SpaceMono";
   font-weight: regular;
-  src: url("/assets/font/SpaceMono-Regular.ttf") format("truetype");
+  src: url("../assets/font/SpaceMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "SpaceMono";
   font-weight: bold;
-  src: url("/assets/font/SpaceMono-Bold.ttf") format("truetype");
+  src: url("../assets/font/SpaceMono-Bold.ttf") format("truetype");
 }

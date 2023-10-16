@@ -27,8 +27,8 @@ body.dark {
 
   --minus-dark: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 12H7' stroke='%23fcf9ed' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   --plus-dark: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 7V17' stroke='%23fcf9ed' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 12H7' stroke='%23fcf9ed' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  --check: url("/assets/check-mark.svg");
-  --check-dark: url("/assets/check-mark-dark.svg");
+  --check: url("../assets/check-mark.svg");
+  --check-dark: url("../assets/check-mark-dark.svg");
 }
 
 * {
@@ -306,35 +306,35 @@ label {
 }
 
 #en_flag {
-  background: url("/assets/flags/gb.svg");
+  background: url("../assets/flags/gb.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #it_flag {
-  background: url("/assets/flags/it.svg");
+  background: url("../assets/flags/it.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #de_flag {
-  background: url("/assets/flags/de.svg");
+  background: url("../assets/flags/de.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #es_flag {
-  background: url("/assets/flags/es.svg");
+  background: url("../assets/flags/es.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #fr_flag {
-  background: url("/assets/flags/fr.svg");
+  background: url("../assets/flags/fr.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -391,7 +391,7 @@ summary {
   width: 1rem;
   height: 1rem;
   border: solid 2px black;
-  background-image: url("/assets/check-mark.svg");
+  background-image: url("../assets/check-mark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

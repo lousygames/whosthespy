@@ -7,8 +7,8 @@
     "adv_settings": "Impostazioni avanzate",
     "options": [
       "Geografia",
-      "Nazioni",
       "Luoghi",
+      "Nazioni",
       "Animali",
       "Lavori",
       "Oggetti"
@@ -23,8 +23,8 @@
     "adv_settings": "Advanced settings",
     "options": [
       "Geography",
-      "Nations",
       "Locations",
+      "Nations",
       "Animals",
       "Jobs",
       "Objects"
@@ -39,8 +39,8 @@
     "adv_settings": "Paramètres avancés",
     "options": [
       "Géographie",
-      "Nations",
       "Lieux",
+      "Nations",
       "Animaux",
       "Emplois",
       "Objets"
@@ -55,8 +55,8 @@
     "adv_settings": "Configuración avanzada",
     "options": [
       "Geografía",
-      "Naciones",
       "Lugares",
+      "Naciones",
       "Animales",
       "Trabajos",
       "Objetos"
@@ -69,7 +69,7 @@
     "spies": "Anzahl der Spione",
     "play_now": "Jetzt spielen!",
     "adv_settings": "Erweiterte Einstellungen",
-    "options": ["Geographie", "Nationen", "Orte", "Tiere", "Berufe", "Objekte"],
+    "options": ["Geographie", "Orte", "Nationen", "Tiere", "Berufe", "Objekte"],
     "topic": "Themen"
   }
 }

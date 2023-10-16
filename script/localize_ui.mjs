@@ -18,13 +18,14 @@ function composeOptions(options, topics) {
   legend.innerHTML = topics;
 
   fieldset.appendChild(legend);
-  options.forEach((opt) => {
+  options.forEach((opt, index) => {
     const div = document.createElement("div");
 
     const input = document.createElement("input");
     input.name = opt;
     input.id = opt.toLowerCase();
     input.type = "checkbox";
+    input.value = index;
 
     const label = document.createElement("label");
     label.innerText = opt;
@@ -38,20 +39,4 @@ function composeOptions(options, topics) {
 
   document.querySelector("#options").innerHTML = "";
   document.querySelector("#options").appendChild(fieldset);
-}
-
-{
-  /* <fieldset>
-  <legend>Choose your monster's features:</legend>
-
-  <div>
-    <input type="checkbox" id="scales" name="scales" checked />
-    <label for="scales">Scales</label>
-  </div>
-
-  <div>
-    <input type="checkbox" id="horns" name="horns" />
-    <label for="horns">Horns</label>
-  </div>
-</fieldset>; */
 }

@@ -70,7 +70,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   align-content: center;
   justify-content: center;
   display: inline-grid;

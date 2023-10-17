@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
 
   let pool = [];
 
-  fetch(`../assets/localization/assets.${payload.lang}.json`)
+  fetch(`assets/localization/assets.${payload.lang}.json`)
     .then((response) => response.json())
     .then((json) => {
       payload.gameSettings.topics.forEach((element) => {

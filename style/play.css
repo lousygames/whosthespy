@@ -6,6 +6,16 @@
   --color-black: #112c34;
 }
 
+* {
+  font-family: "SpaceMono", sans-serif; 
+
+  -webkit-font-smoothing: antialiased;
+
+  /* disable tap highlight color on mobile safari */
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -22,7 +32,7 @@ body {
 .wrapper {
   position: sticky;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   width: 100vw;
   min-height: 100vh;
   align-content: center;

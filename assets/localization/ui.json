@@ -13,7 +13,9 @@
       "Lavori",
       "Oggetti"
     ],
-    "topic": "Argomenti"
+    "topic": "Argomenti",
+    "spy": "Sei tu la spia!",
+    "tap": "Tocca per pescare una carta"
   },
   "en": {
     "title": "Find the spy",
@@ -29,7 +31,9 @@
       "Jobs",
       "Objects"
     ],
-    "topic": "Topics"
+    "topic": "Topics",
+    "spy": "You're the spy!",
+    "tap": "Tap to draw a card"
   },
   "fr": {
     "title": "Découvrir l'espion",
@@ -45,7 +49,9 @@
       "Emplois",
       "Objets"
     ],
-    "topic": "Sujets"
+    "topic": "Sujets",
+    "spy": "Vous êtes l'espion!",
+    "tap": "Tapez pour tirer une carte"
   },
   "es": {
     "title": "Descubra al espía",
@@ -61,7 +67,9 @@
       "Trabajos",
       "Objetos"
     ],
-    "topic": "Temas"
+    "topic": "Temas",
+    "spy": "¡Tú eres el espía!",
+    "tap": "Toca para robar una carta"
   },
   "de": {
     "title": "Finde den Spion",
@@ -70,6 +78,8 @@
     "play_now": "Jetzt spielen!",
     "adv_settings": "Erweiterte Einstellungen",
     "options": ["Geographie", "Orte", "Nationen", "Tiere", "Berufe", "Objekte"],
-    "topic": "Themen"
+    "topic": "Themen",
+    "spy": "Du bist der Spion!",
+    "tap": "Antippen, um eine Karte zu ziehen"
   }
 }

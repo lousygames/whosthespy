@@ -21,9 +21,11 @@ window.addEventListener("load", () => {
         value
       );
 
-      cards = cards.map((e) => createCardElement(e));
-      console.log(cards);
+      const werePlaying = document.createElement("h1");
+      werePlaying.innerText = localizedUi.play;
+      document.querySelector(".scene").appendChild(werePlaying);
 
+      cards = cards.map((e) => createCardElement(e));
       cards.forEach((element) => {
         document.querySelector(".scene").appendChild(element);
       });
@@ -36,6 +38,7 @@ window.addEventListener("load", () => {
     const frontParag = document.createElement("p");
     const frontSmallParag = document.createElement("p");
     const backParag = document.createElement("p");
+    const backSmallParag = document.createElement("p");
 
     card.classList.add("card");
     cardFaceFront.classList.add("card__face", "card__face--front");
@@ -46,10 +49,13 @@ window.addEventListener("load", () => {
     frontSmallParag.classList.add("small_text");
     backParag.innerText = content;
     backParag.classList.add("title");
+    backSmallParag.innerText = localizedUi.nextPlayer;
+    backSmallParag.classList.add("small_text");
 
     cardFaceFront.appendChild(frontParag);
     cardFaceFront.appendChild(frontSmallParag);
     cardFaceBack.appendChild(backParag);
+    cardFaceBack.appendChild(backSmallParag);
     card.appendChild(cardFaceFront);
     card.appendChild(cardFaceBack);
 

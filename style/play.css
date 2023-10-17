@@ -3,6 +3,7 @@
 :root {
   --color-form: #fffef9;
   --color-bg: #f5f5f5;
+  --color-black: #112c34;
 }
 
 body {
@@ -80,6 +81,9 @@ body {
 .card__face--front p.title {
   font-size: 1.5rem;
 }
+.card__face--back p.title {
+  font-size: 1.75rem;
+}
 
 .card__face p.title {
   margin: auto;
@@ -109,5 +113,14 @@ p.small_text {
   background: var(--color-form);
   transform: rotateY(180deg);
   box-shadow: 0 0 0 16px var(--color-form);
-  color: black;
+  color: var(--color-black);
+}
+
+h1 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
 }

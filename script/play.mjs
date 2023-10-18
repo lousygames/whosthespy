@@ -1,4 +1,4 @@
-import ui from "../assets/localization/ui.json";
+import ui from "../assets/localization/ui.json" assert { type: "json" };
 
 window.addEventListener("load", () => {
   const payload = JSON.parse(localStorage.getItem("payload"));

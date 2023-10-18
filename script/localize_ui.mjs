@@ -1,4 +1,4 @@
-import ui from "../assets/localization/ui.json" assert { type: "json" };
+import ui from "../assets/localization/ui.json";
 
 export function localizeUI(lang) {
   const content = ui[lang];

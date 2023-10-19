@@ -1,6 +1,16 @@
-import ui from "../assets/localization/ui.json" assert { type: "json" };
+let ui;
 
-export function localizeUI(lang) {
+async function init() {
+  await fetch("assets/localization/ui.json")
+    .then((response) => response.json())
+    .then((_ui) => (ui = _ui));
+}
+
+export async function localizeUI(lang) {
+  if(!ui){
+    await init();
+  }
+
   const content = ui[lang];
 
   document.querySelector("#title").innerHTML = content.title;

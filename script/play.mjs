@@ -1,6 +1,8 @@
-import ui from "../assets/localization/ui.json" assert { type: "json" };
-
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+  let ui;
+  await fetch("assets/localization/ui.json")
+    .then((response) => response.json())
+    .then((_ui) => (ui = _ui));
   const payload = JSON.parse(localStorage.getItem("payload"));
   const localizedUi = ui[payload.lang];
 

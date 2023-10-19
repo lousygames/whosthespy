@@ -1,9 +1,9 @@
 import { localizeUI } from "./localize_ui.mjs";
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   const langSelector = document.querySelector("#lang_selector");
-  langSelector.addEventListener("input", (event) => {
-    localizeUI(event.target.value);
+  langSelector.addEventListener("input", async (event) => {
+    await localizeUI(event.target.value);
     localStorage.setItem("lang", event.target.value);
     loadTopics();
   });
@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
 
   window.formSubmit = formSubmitted;
 
-  localizeUI(defLang || "en");
+  await localizeUI(defLang || "en");
   document.querySelector("#" + (defLang || "en")).checked = true;
 
   loadTopics();

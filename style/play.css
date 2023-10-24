@@ -57,6 +57,7 @@ body {
   width: 100vw;
   justify-content: center;
   color: var(--color-black);
+  opacity: 0;
 }
 
 .counter_ratio {
@@ -110,7 +111,6 @@ body {
 .card__face--front {
   background: #a7c0d1;
   color: var(--color-form);
-  /*box-shadow: 0 0 0 16px #65849a68;*/
   box-shadow: 0 0 0 16px var(--color-form);
   display: flex;
 }
@@ -166,4 +166,9 @@ h1 {
   transition-duration: 0.5s;
   position: relative;
   transform: translateY(-1000%);
+}
+
+.hydrated {
+  opacity: 1;
+  transition-duration: 0.5s;
 }

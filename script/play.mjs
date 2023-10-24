@@ -27,12 +27,12 @@ window.addEventListener("load", async () => {
       werePlaying.innerText = localizedUi.play;
       document.querySelector(".scene").appendChild(werePlaying);
 
-      
       document.querySelector(".counter_label").innerText = localizedUi.player;
-      document.querySelector(".counter").classList.remove('complete')
+      document.querySelector(".counter").classList.remove("complete");
       document.querySelector(
         ".counter_ratio"
       ).innerText = `1/${payload.gameSettings.playersCount}`;
+      document.querySelector(".counter").classList.add("hydrated");
 
       cards = cards.map((e) => createCardElement(e));
       cards.forEach((element) => {
@@ -108,7 +108,7 @@ window.addEventListener("load", async () => {
         count - remainingCards + 1
       }/${count}`;
     } else {
-      document.querySelector(".counter").classList.add('complete');
+      document.querySelector(".counter").classList.add("complete");
     }
     card.dataset.isRemoved = true;
   }

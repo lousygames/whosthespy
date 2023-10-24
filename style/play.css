@@ -45,11 +45,31 @@ body {
   background-color: var(--color-bg);
 }
 
+.counter_spacer,
+.counter {
+  height: 5rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+  color: var(--color-black);
+}
+
+.counter_ratio {
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+}
+
 .scene {
   width: 308px;
   height: 468px;
-  margin: auto;
   perspective: 600px;
+  margin: 3rem auto;
 }
 
 .card {
@@ -140,4 +160,10 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   margin: 0;
+}
+
+.complete {
+  transition-duration: 0.5s;
+  position: relative;
+  transform: translateY(-1000%);
 }

@@ -27,6 +27,13 @@ window.addEventListener("load", async () => {
       werePlaying.innerText = localizedUi.play;
       document.querySelector(".scene").appendChild(werePlaying);
 
+      
+      document.querySelector(".counter_label").innerText = localizedUi.player;
+      document.querySelector(".counter").classList.remove('complete')
+      document.querySelector(
+        ".counter_ratio"
+      ).innerText = `1/${payload.gameSettings.playersCount}`;
+
       cards = cards.map((e) => createCardElement(e));
       cards.forEach((element) => {
         document.querySelector(".scene").appendChild(element);
@@ -69,7 +76,7 @@ window.addEventListener("load", async () => {
     card.addEventListener("transitionend", (event) => {
       const c = event.target;
       delete c.dataset.isRunningTransition;
-      if(c.dataset.isRemoved) {
+      if (c.dataset.isRemoved) {
         c.parentElement.removeChild(c);
       }
     });
@@ -92,17 +99,19 @@ window.addEventListener("load", async () => {
       return;
     }
 
+    const count = JSON.parse(localStorage.getItem("payload")).gameSettings
+      .playersCount;
+    const remainingCards =
+      Array.from(document.querySelectorAll(".card")).length - 1;
+    if (count - remainingCards + 1 <= count) {
+      document.querySelector(".counter_ratio").innerText = `${
+        count - remainingCards + 1
+      }/${count}`;
+    } else {
+      document.querySelector(".counter").classList.add('complete');
+    }
     card.dataset.isRemoved = true;
   }
-
-  // <div class="card">
-  //   <div class="card__face card__face--front">
-  //     <p></p>
-  //   </div>
-  //   <div class="card__face card__face--back">
-  //     <p>Back</p>
-  //   </div>
-  // </div>;
 
   function generateCards(player, spies, lang, value) {
     const cards = [];

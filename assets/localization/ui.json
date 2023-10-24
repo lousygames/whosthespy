@@ -17,7 +17,8 @@
     "spy": "Sei tu la spia!",
     "tap": "Tocca per pescare una carta",
     "play": "Si gioca!",
-    "nextPlayer": "Tocca di nuovo e passa il telefono al giocatore successivo"
+    "nextPlayer": "Tocca di nuovo e passa il telefono al giocatore successivo",
+    "player" : "Giocatore"
   },
   "en": {
     "title": "Find the spy",
@@ -37,7 +38,8 @@
     "spy": "You're the spy!",
     "tap": "Tap to draw a card",
     "play": "Game on!",
-    "nextPlayer": "Tap again and give the phone to the next player"
+    "nextPlayer": "Tap again and give the phone to the next player",
+    "player" : "Player"
   },
   "fr": {
     "title": "Découvrir l'espion",
@@ -57,7 +59,8 @@
     "spy": "Vous êtes l'espion!",
     "tap": "Tapez pour tirer une carte",
     "play": "C'est parti!",
-    "nextPlayer": "Tapez à nouveau et passez le téléphone au joueur suivant"
+    "nextPlayer": "Tapez à nouveau et passez le téléphone au joueur suivant",
+    "player" : "Joueur"
   },
   "es": {
     "title": "Descubra al espía",
@@ -77,7 +80,8 @@
     "spy": "¡Tú eres el espía!",
     "tap": "Toca para robar una carta",
     "play": "¡A jugar!",
-    "nextPlayer": "Toca de nuevo y pasa el teléfono al siguiente jugador"
+    "nextPlayer": "Toca de nuevo y pasa el teléfono al siguiente jugador",
+    "player" : "Jugador"
   },
   "de": {
     "title": "Finde den Spion",
@@ -90,6 +94,7 @@
     "spy": "Du bist der Spion!",
     "tap": "Antippen, um eine Karte zu ziehen",
     "play": "Das Spiel läuft!",
-    "nextPlayer": "Tippen Sie erneut und geben Sie das Telefon an den nächsten Spieler weiter"
+    "nextPlayer": "Tippen Sie erneut und geben Sie das Telefon an den nächsten Spieler weiter",
+    "player" : "Spieler"
   }
 }

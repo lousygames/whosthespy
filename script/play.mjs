@@ -62,15 +62,31 @@ window.addEventListener("load", async () => {
     card.appendChild(cardFaceBack);
 
     card.addEventListener("click", (event) => cardClicked(event));
+    card.addEventListener(
+      "transitionstart",
+      () => (card.dataset.isRunningTransition = true)
+    );
+    card.addEventListener("transitionend", (event) => {
+      const c = event.target;
+      delete c.dataset.isRunningTransition;
+      if(c.dataset.isRemoved) {
+        c.parentElement.removeChild(c);
+      }
+    });
 
     return card;
   }
 
   function cardClicked(event) {
     let card = event.target;
+
     while (!card.classList.contains("card")) {
       card = card.parentElement;
     }
+    if (card.dataset.isRunningTransition) {
+      return;
+    }
+
     if (!card.dataset.isFlipped) {
       card.dataset.isFlipped = true;
       return;

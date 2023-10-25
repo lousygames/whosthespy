@@ -33,7 +33,7 @@ body {
 }
 
 .wrapper {
-  position: sticky;
+  position: absolute;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100vw;

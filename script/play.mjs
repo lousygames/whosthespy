@@ -4,6 +4,15 @@ window.addEventListener("load", async () => {
     .then((response) => response.json())
     .then((_ui) => (ui = _ui));
   const payload = JSON.parse(localStorage.getItem("payload"));
+  if (
+    !payload ||
+    !payload?.gameSettings.playersCount ||
+    !payload?.gameSettings.spiesCount ||
+    !payload?.gameSettings.topics ||
+    !payload?.lang
+  ) {
+    window.location.href = "/index.html";
+  }
   const localizedUi = ui[payload.lang];
 
   let pool = [];

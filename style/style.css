@@ -63,10 +63,11 @@ body {
   touch-action: manipulation;
 
   transition: background-color 0.2s ease-out;
+  background-color: var(--color-bg);
 }
 
 #wrapper {
-  position: sticky;
+  position: absolute;
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100vw;
@@ -77,6 +78,17 @@ body {
   align-items: center;
   padding: 3.5rem 0;
   background-color: var(--color-bg);
+  top: 3vh;
+  transition: top opacity;
+  transition-duration: 0.35s;
+  transition-delay: 0.15s;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+#wrapper.hydrated {
+  top: 0;
+  opacity: 1;
 }
 
 form {

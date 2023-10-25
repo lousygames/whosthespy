@@ -49,4 +49,6 @@ function composeOptions(options, topics) {
 
   document.querySelector("#options").innerHTML = "";
   document.querySelector("#options").appendChild(fieldset);
+
+  document.querySelector('#wrapper').classList.add('hydrated');
 }

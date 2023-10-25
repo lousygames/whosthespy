@@ -78,9 +78,9 @@ body {
   align-items: center;
   padding: 3.5rem 0;
   background-color: var(--color-bg);
-  top: 3vh;
+  top: 2vh;
   transition: top opacity;
-  transition-duration: 0.35s;
+  transition-duration: 0.25s;
   transition-delay: 0.15s;
   transition-timing-function: ease-in-out;
   opacity: 0;

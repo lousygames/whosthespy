@@ -229,14 +229,6 @@ label {
   box-shadow: 0 0 0 3px var(--color-black);
 }
 
-#de_flag,
-#en_flag,
-#it_flag {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 #en_flag { background: url(../assets/flags/gb.svg) }
 
 #it_flag { background: url(../assets/flags/it.svg) }
@@ -245,16 +237,17 @@ label {
 
 #es_flag { background: url(../assets/flags/es.svg) }
 
+#fr_flag { background: url(../assets/flags/fr.svg) }
+
 #es_flag,
 #fr_flag,
+#it_flag,
+#de_flag,
+#en_flag,
 #options fieldset label::before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#fr_flag {
-  background: url(../assets/flags/fr.svg);
 }
 
 details,

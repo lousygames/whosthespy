@@ -1,0 +1,100 @@
+{
+  "it": {
+    "title": "Trova la spia",
+    "players": "Numero di giocatori",
+    "spies": "Numero di spie",
+    "play_now": "Gioca ora!",
+    "adv_settings": "Impostazioni avanzate",
+    "options": [
+      "Geografia",
+      "Luoghi",
+      "Nazioni",
+      "Animali",
+      "Lavori",
+      "Oggetti"
+    ],
+    "topic": "Argomenti",
+    "spy": "Sei tu la spia!",
+    "tap": "Tocca per pescare una carta",
+    "play": "Si gioca!",
+    "nextPlayer": "Tocca di nuovo e passa il telefono al giocatore successivo",
+    "player": "Giocatore"
+  },
+  "en": {
+    "title": "Find the spy",
+    "players": "Number of players",
+    "spies": "Number of spies",
+    "play_now": "Play now!",
+    "adv_settings": "Advanced settings",
+    "options": [
+      "Geography",
+      "Locations",
+      "Nations",
+      "Animals",
+      "Jobs",
+      "Objects"
+    ],
+    "topic": "Topics",
+    "spy": "You're the spy!",
+    "tap": "Tap to draw a card",
+    "play": "Game on!",
+    "nextPlayer": "Tap again and give the phone to the next player",
+    "player": "Player"
+  },
+  "fr": {
+    "title": "Découvrir l'espion",
+    "players": "Nombre de joueurs",
+    "spies": "Nombre d'espions",
+    "play_now": "Jouer maintenant!",
+    "adv_settings": "Paramètres avancés",
+    "options": [
+      "Géographie",
+      "Lieux",
+      "Nations",
+      "Animaux",
+      "Emplois",
+      "Objets"
+    ],
+    "topic": "Sujets",
+    "spy": "Vous êtes l'espion!",
+    "tap": "Tapez pour tirer une carte",
+    "play": "C'est parti!",
+    "nextPlayer": "Tapez à nouveau et passez le téléphone au joueur suivant",
+    "player": "Joueur"
+  },
+  "es": {
+    "title": "Descubra al espía",
+    "players": "Número de jugadores",
+    "spies": "Número de espías",
+    "play_now": "Jugar ahora!",
+    "adv_settings": "Configuración avanzada",
+    "options": [
+      "Geografía",
+      "Lugares",
+      "Naciones",
+      "Animales",
+      "Trabajos",
+      "Objetos"
+    ],
+    "topic": "Temas",
+    "spy": "¡Tú eres el espía!",
+    "tap": "Toca para robar una carta",
+    "play": "¡A jugar!",
+    "nextPlayer": "Toca de nuevo y pasa el teléfono al siguiente jugador",
+    "player": "Jugador"
+  },
+  "de": {
+    "title": "Finde den Spion",
+    "players": "Anzahl der Spieler",
+    "spies": "Anzahl der Spione",
+    "play_now": "Jetzt spielen!",
+    "adv_settings": "Erweiterte Einstellungen",
+    "options": ["Geographie", "Orte", "Nationen", "Tiere", "Berufe", "Objekte"],
+    "topic": "Themen",
+    "spy": "Du bist der Spion!",
+    "tap": "Antippen, um eine Karte zu ziehen",
+    "play": "Das Spiel läuft!",
+    "nextPlayer": "Tippen Sie erneut und geben Sie das Telefon an den nächsten Spieler weiter",
+    "player": "Spieler"
+  }
+}

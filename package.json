@@ -6,8 +6,9 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "parcel src/*.html",
-    "build:prod": "parcel build src/*.html",
-    "prepare": "husky install"
+    "build:prod": "parcel build src/*.html --public-url ./",
+    "prepare": "husky install",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "keywords": [],
   "author": "",

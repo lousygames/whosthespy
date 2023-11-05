@@ -1,14 +1,8 @@
-let ui;
+import ui from "../assets/localization/ui.json";
 
-async function init() {
-  await fetch("assets/localization/ui.json")
-    .then((response) => response.json())
-    .then((_ui) => (ui = _ui));
-}
-
-export async function localizeUI(lang) {
-  if(!ui){
-    await init();
+export function localizeUI(lang) {
+  if (!ui) {
+    return;
   }
 
   const content = ui[lang];
@@ -50,5 +44,5 @@ function composeOptions(options, topics) {
   document.querySelector("#options").innerHTML = "";
   document.querySelector("#options").appendChild(fieldset);
 
-  document.querySelector('#wrapper').classList.add('hydrated');
+  document.querySelector("#wrapper").classList.add("hydrated");
 }

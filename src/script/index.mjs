@@ -3,7 +3,7 @@ import { localizeUI } from "./localize_ui.mjs";
 window.addEventListener("load", async () => {
   const langSelector = document.querySelector("#lang_selector");
   langSelector.addEventListener("input", async (event) => {
-    await localizeUI(event.target.value);
+    localizeUI(event.target.value);
     localStorage.setItem("lang", event.target.value);
     loadTopics();
   });
@@ -11,7 +11,7 @@ window.addEventListener("load", async () => {
   const topicSelector = document.querySelector("#options");
   topicSelector.addEventListener("input", () => {
     const topics = Array.from(
-      document.querySelector("#options").querySelectorAll(":checked")
+      document.querySelector("#options").querySelectorAll(":checked"),
     ).map((e) => e.value);
 
     localStorage.setItem("topics", JSON.stringify(topics));
@@ -21,7 +21,7 @@ window.addEventListener("load", async () => {
 
   window.formSubmit = formSubmitted;
 
-  await localizeUI(defLang || "en");
+  localizeUI(defLang || "en");
   document.querySelector("#" + (defLang || "en")).checked = true;
 
   loadTopics();
@@ -36,7 +36,7 @@ function loadTopics() {
   }
   lastPlayed = lastPlayed.map((e) => parseInt(e));
   const topics = Array.from(
-    document.querySelector("#options").querySelectorAll("input")
+    document.querySelector("#options").querySelectorAll("input"),
   );
   topics.forEach((element, index) => {
     if (lastPlayed.includes(index)) {
@@ -47,7 +47,7 @@ function loadTopics() {
 
 function formSubmitted(form) {
   const topics = Array.from(
-    document.querySelector("#options").querySelectorAll(":checked")
+    document.querySelector("#options").querySelectorAll(":checked"),
   ).map((e) => e.value);
   const payload = {
     lang: document.querySelector("#lang_selector").querySelector(":checked")

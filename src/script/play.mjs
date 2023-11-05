@@ -1,5 +1,6 @@
 import { shuffle, extractRandomElementFrom } from "./array-utils.mjs";
 import { initializeDom } from "./dom-utils.mjs";
+import notLocalizedUi from "../assets/localization/ui.json";
 
 const topics = {
   0: "geo",
@@ -23,14 +24,10 @@ const main = async () => {
     window.location.href = "/index.html";
   }
 
-  const ui = (
-    await fetch("assets/localization/ui.json").then((response) =>
-      response.json()
-    )
-  )[payload.lang];
+  const ui = notLocalizedUi[payload.lang];
 
   const words = await fetch(
-    `assets/localization/assets.${payload.lang}.json`
+    `assets/localization/assets.${payload.lang}.json`,
   ).then((response) => response.json());
   let pool = [];
 
@@ -43,7 +40,7 @@ const main = async () => {
     payload.gameSettings.playersCount,
     payload.gameSettings.spiesCount,
     value,
-    ui.spy
+    ui.spy,
   );
 
   initializeDom(ui, payload, cards);

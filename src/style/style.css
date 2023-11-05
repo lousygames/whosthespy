@@ -1,6 +1,8 @@
-@import "common.css";
+@import "./common.css";
 
-* { color: var(--color-black); }
+* {
+  color: var(--color-black);
+}
 
 h1 {
   font-weight: 700;
@@ -155,9 +157,13 @@ button.button-increment::after {
   background-repeat: no-repeat;
 }
 
-button:disabled { pointer-events: none }
+button:disabled {
+  pointer-events: none;
+}
 
-button:disabled::after { opacity: 0.25 }
+button:disabled::after {
+  opacity: 0.25;
+}
 
 button[type="submit"] {
   padding: 1rem;
@@ -172,20 +178,30 @@ button[type="submit"] {
   text-transform: uppercase;
 }
 
-button[type="submit"]:hover { background-color: var(--color-black-hover) }
+button[type="submit"]:hover {
+  background-color: var(--color-black-hover);
+}
 
 button[type="submit"]:active {
   background-color: var(--color-blue-dark);
   transform: scale(1.025);
 }
 
-.button-decrement::after { background-image: var(--minus-dark) }
+.button-decrement::after {
+  background-image: var(--minus-dark);
+}
 
-.button-increment::after { background-image: var(--plus-dark) }
+.button-increment::after {
+  background-image: var(--plus-dark);
+}
 
-.button-decrement { border-right: none }
+.button-decrement {
+  border-right: none;
+}
 
-.button-increment { border-left: none }
+.button-increment {
+  border-left: none;
+}
 
 @media (hover: hover) {
   button:hover,
@@ -229,15 +245,25 @@ label {
   box-shadow: 0 0 0 3px var(--color-black);
 }
 
-#en_flag { background: url(../assets/flags/gb.svg) }
+#en_flag {
+  background: url(../assets/flags/gb.svg);
+}
 
-#it_flag { background: url(../assets/flags/it.svg) }
+#it_flag {
+  background: url(../assets/flags/it.svg);
+}
 
-#de_flag { background: url(../assets/flags/de.svg) }
+#de_flag {
+  background: url(../assets/flags/de.svg);
+}
 
-#es_flag { background: url(../assets/flags/es.svg) }
+#es_flag {
+  background: url(../assets/flags/es.svg);
+}
 
-#fr_flag { background: url(../assets/flags/fr.svg) }
+#fr_flag {
+  background: url(../assets/flags/fr.svg);
+}
 
 #es_flag,
 #fr_flag,
@@ -264,7 +290,9 @@ fieldset#lang_selector {
   justify-content: space-between;
 }
 
-details { margin-top: 2rem }
+details {
+  margin-top: 2rem;
+}
 
 summary {
   font-size: 1rem;

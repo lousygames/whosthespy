@@ -33,6 +33,13 @@ function setInputButtonState() {
       const value = input.value;
       const parent = input.parentElement.parentElement;
 
+      if (!parent.children[0].onclick) {
+        parent.children[0].onclick = setNumber;
+      }
+      if (!parent.children[2].onclick) {
+        parent.children[2].onclick = setNumber;
+      }
+
       if (parent.children[0] && input.hasAttribute("min"))
         parent.children[0].disabled = value <= parseFloat(input.min);
 

@@ -1,4 +1,4 @@
-@import "fontfaces.css";
+@import "./fontfaces.css";
 
 :root {
   --color-black: #112c34;

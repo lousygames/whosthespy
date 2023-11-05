@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find the spy</title>
     <link rel="stylesheet" href="style/style.css" />
-    <script src="script/index.mjs" type="module"></script>
-    <script src="script/sliders.js"></script>
+    <script src="script/index.mjs"></script>
+    <script src="script/sliders.mjs"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -20,7 +20,6 @@
             <button
               type="button"
               class="button-decrement"
-              onclick="setNumber(event)"
               data-input-id="players_count"
               data-operation="decrement"
             ></button>
@@ -41,7 +40,6 @@
             <button
               type="button"
               class="button-increment"
-              onclick="setNumber(event)"
               data-input-id="players_count"
               data-operation="increment"
             ></button>
@@ -55,7 +53,6 @@
             <button
               type="button"
               class="button-decrement"
-              onclick="setNumber(event)"
               data-input-id="spy_count"
               data-operation="decrement"
             ></button>
@@ -75,7 +72,6 @@
             <button
               type="button"
               class="button-increment"
-              onclick="setNumber(event)"
               data-input-id="spy_count"
               data-operation="increment"
             ></button>

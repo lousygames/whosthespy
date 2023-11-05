@@ -6,13 +6,14 @@ export function initializeDom(ui, payload, cards) {
   document.querySelector(".counter_label").innerText = ui.player;
   document.querySelector(".counter").classList.remove("complete");
   document.querySelector(
-    ".counter_ratio"
+    ".counter_ratio",
   ).innerText = `1/${payload.gameSettings.playersCount}`;
   document.querySelector(".counter").classList.add("hydrated");
 
   cards = cards.map((e) => createCardElement(e, ui));
   cards.forEach((element) => {
-    document.querySelector(".scene").appendChild(element);
+    document.querySelector(".scene").appendChild(element)
+    ;
   });
 }
 
@@ -60,7 +61,7 @@ function createCardElement(content, localizedUi) {
   //Disable click while animation runs
   card.addEventListener(
     "transitionstart",
-    () => (card.dataset.isRunningTransition = true)
+    () => (card.dataset.isRunningTransition = true),
   );
 
   //Enable click after animation is completed and remove previous card from dom

@@ -7,7 +7,6 @@
     "clean": "rm dist/bundle.js",
     "start": "parcel src/*.html",
     "build:prod": "parcel build src/*.html",
-    "lint": "npx prettier ./src --write",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -16,6 +15,7 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-static-files-copy": "^2.6.0",
     "prettier": "^3.0.3"
@@ -27,5 +27,8 @@
         "staticOutDir": "assets/localization"
       }
     ]
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

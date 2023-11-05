@@ -12,8 +12,7 @@ export function initializeDom(ui, payload, cards) {
 
   cards = cards.map((e) => createCardElement(e, ui));
   cards.forEach((element) => {
-    document.querySelector(".scene").appendChild(element)
-    ;
+    document.querySelector(".scene").appendChild(element);
   });
 }
 

@@ -8,7 +8,7 @@
     "start": "parcel src/*.html",
     "build:prod": "parcel build src/*.html --public-url ./",
     "prepare": "husky install",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "push-gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,8 @@
     "lint-staged": "^15.0.2",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-static-files-copy": "^2.6.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5"
   },
   "staticFiles": {
     "staticPath": [
